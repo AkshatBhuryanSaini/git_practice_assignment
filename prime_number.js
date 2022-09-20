@@ -12,12 +12,16 @@ if(num%i==0){
  return true;
 }
 return false;
+
 }
 
-var answer=prime(7);
 
-if(answer==true){
-console.log("Prime Number");
+var res=prime(7);
+
+if(res==true){
+console.log("Yes, it is a Prime Number");
 }else{
-console.log("not a prime number");
+console.log("No, it is not a prime number");
 }
+
+
