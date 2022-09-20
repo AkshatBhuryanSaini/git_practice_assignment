@@ -1,11 +1,23 @@
+
+//Code for Prime Number
+
 function prime(num){
-var factor=0;
-
-for(var i=1; i<=num; i++){
-if(num%i==0){
- factor++;
+if(num<=1 || num==undefined){
+return false;
 }
-}return factor;
 
+for(var i=2; i<Math.sqrt(num); i++){
 
+if(num%i==0){
+ return true;
+}
+return false;
+}
 
+var answer=prime(7);
+
+if(answer==true){
+console.log("Prime Number");
+}else{
+console.log("not a prime number");
+}
